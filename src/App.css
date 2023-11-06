@@ -1,0 +1,26 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  display:flex;
+  text-align: left;
+
+} */
+
+/* .bruh {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: normal;
+  width: 200px;
+} */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+span {
+  white-space: nowrap;
+}
