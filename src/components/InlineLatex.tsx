@@ -1,6 +1,6 @@
 // allows for use of $ notation for declaring inline latex. 
 // eg: "The solutions to the equation $x^2 + y^2 = 1$ are the points on the circle"
-import 'katex/dist/katex.min.css';
+// import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
 
 export type ParsedLatex = { text: string } | { tex: string };

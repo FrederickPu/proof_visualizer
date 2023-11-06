@@ -7,14 +7,9 @@
 
 } */
 
-/* .bruh {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+.bruh {
   white-space: normal;
-  width: 200px;
-} */
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -22,5 +17,17 @@
   transition: filter 300ms;
 }
 span {
-  white-space: nowrap;
+  user-select: none;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+
+.explanation_refinement_button {
+  display: inline-block;
+  user-select: none;
+  cursor: default;
+  color: #ccc;
 }

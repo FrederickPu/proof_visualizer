@@ -37,10 +37,14 @@ function App() {
       <Collapse content={<span><InlineMath math={"\\forall x, \\int_0^{\\infty} x^2 dx"}/></span>} />
     </div>
     <p>
-      <span>Proof</span> <Collapse content={<span>To prove <InlineMath math="f" />  is continuous, by definition we need to show that for all elements <InlineMath math="x" /> of <InlineMath math="X"/> and neighborhoods <InlineMath math="V" /> of <InlineMath math="f(x)"/>, there exists a neighborhood <InlineMath math="U"/> of <InlineMath math="x"/> such that <InlineMath math="f[U] \subseteq V"/>.</span>}/> <span>Let <InlineMath math={"x"}/> be an element of <InlineMath math={"X"}/></span>
-      <span>alsdlkajdlkajdalskjdklasjdkl</span>
+      <Collapse content={<InlineLatex latex=' To prove $f$ is continous, by definition we need to show that for all elements $x$ of $X$ and neighborhooods $V$ of $f(x)$, there exists a neighborhood $U$ of $x$ such that $f[U] \subseteq V$.' />}/>
+      <InlineLatex latex=' Let $x$ be an element of $X$. '/>
+      {"By the "}
+      <Tippy content={<InlineLatex latex={"$V$ is a neighborhood of $f(x)$"}/>}>
+        <a href="#">assumption</a>
+      </Tippy>
+      {" we see that blah blah blah."}
     </p>
-    <InlineLatex latex='To prove $f$ is continous, by definition we need to show that for all elements $x$ of $X$ and neighborhooods $V$ of $f(x)$, there exists a neighborhood $U$ of $x$ such that $f[U] \subseteq V$' />
     </div>
   )
 }

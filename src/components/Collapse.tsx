@@ -6,9 +6,7 @@ export function Collapse(props : CollapseProps){
     const {content} = props;
     const [open, setOpen] = React.useState(false);
     return <span>
-        <button onClick={() => setOpen((prevOpen) => !prevOpen)}>
-            {open ? '-' : '+'}
-        </button>
+        <span className="explanation_refinement_button button_unexpand" onClick={() => setOpen((prevOpen) => !prevOpen)}>{open ? '⊖' : '⊕'}</span>
         {open && content}
     </span>
 }
