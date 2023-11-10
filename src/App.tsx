@@ -17,6 +17,8 @@ import './App.css'
 import {InlineProof} from './components/Proof.tsx'
 import test from './assets/testproof.json'
 
+import Comp from './tests/component_regression.tsx'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -59,6 +61,7 @@ function App() {
         <InlineProof proof={test} />
       </p>
     </div>
+    <Comp />
     </div>
   )
 }
