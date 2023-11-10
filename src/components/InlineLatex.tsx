@@ -29,7 +29,13 @@ export function InlineLatex(props : InlineLatexProps){
   const parsed = parseTex(latex);
   return <span>
     {
-    parsed.map((elem : ParsedLatex) => 'text' in elem ? elem['text'] : <InlineMath math={elem['tex']}/>)
+    parsed.map((elem: ParsedLatex, index: number) => 
+      'text' in elem ? (
+        <span key={index}>{elem['text']}</span>
+      ) : (
+        <InlineMath key={index} math={elem['tex']} />
+      )
+    )
   }
   </span>
 }
