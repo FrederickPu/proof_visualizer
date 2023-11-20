@@ -1,7 +1,8 @@
-/* .katex { font-size: 1.15em; }
+.katex { font-size: 1.15em; }
 
 span {
   user-select: none;
+  text-align: left;
 }
 
 body {
@@ -22,4 +23,9 @@ body {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: 0.3em;
-} */
+}
+
+.highlighted {
+  background-color: aqua;
+  transition: background-color 0.25s;
+}

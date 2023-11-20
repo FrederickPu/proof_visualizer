@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
@@ -20,7 +20,7 @@ import test from './assets/testproof.json'
 import Comp from './tests/component_regression.tsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <div>
@@ -39,11 +39,11 @@ function App() {
     </Tippy>
     <div>
       Omg it's inline:  
-      <Collapse content={<span><InlineMath math={"\\forall x, \\int_0^{\\infty} x^2 dx"}/></span>} />
+      <Collapse content={<InlineMath math={"\\forall x, \\int_0^{\\infty} x^2 dx"}/>} />
     </div>
     <div>
       <h3>Using Collapse, InlineLatex and Tippy only</h3>
-    <p>
+    <div>
       <Collapse content={<InlineLatex latex=' To prove $f$ is continous, by definition we need to show that for all elements $x$ of $X$ and neighborhooods $V$ of $f(x)$, there exists a neighborhood $U$ of $x$ such that $f[U] \subseteq V$.' />}/>
       <InlineLatex latex=' Let $x$ be an element of $X$. '/>
       <span>{"By the "}
@@ -53,15 +53,15 @@ function App() {
       </span>
       {" we see that blah blah blah."}
       <Collapse placeholder={"We can obtain"} content={<InlineLatex latex="$2 + 2 = 4$ minus $1$ is $(h^{-1} \circ h) (3)= 3$ quick maths."/>}/>
-    </p>
+    </div>
     </div>
     <div>
       <h3>Using proof objects</h3>
       <p>
-        <InlineProof proof={test} />
+        {/* <InlineProof proof={test} /> */}
       </p>
     </div>
-    <Comp />
+    {/* <Comp /> */}
     </div>
   )
 }

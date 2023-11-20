@@ -1,0 +1,1 @@
+export {InlineProof} from './src/components/Proof.tsx'

@@ -1,8 +1,8 @@
 // a list of sanity checks which compare the desired behavior of our custom components to their actual behavior
-import { useState } from 'react'
+// import { useState } from 'react'
 
 import 'katex/dist/katex.min.css';
-import { InlineMath, BlockMath } from 'react-katex';
+// import { InlineMath, BlockMath } from 'react-katex';
 
 import { InlineLatex } from '../components/InlineLatex.tsx';
 
@@ -11,7 +11,7 @@ import Tippy from '@tippyjs/react';
 import {Collapse} from '../components/Collapse.tsx'
 
 import {InlineProof} from '../components/Proof.tsx'
-import test from '../assets/testproof.json'
+import test from './testproof.json'
 
 function Regression() {
 

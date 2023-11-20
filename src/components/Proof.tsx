@@ -1,6 +1,8 @@
 import { Collapse } from './Collapse.tsx';
 import { InlineLatex } from './InlineLatex.tsx';
 import Tippy from '@tippyjs/react';
+import './styles.modules.css'
+// import '../App.css'
 
 interface Proof {
   content?: Proof[];

@@ -2,18 +2,11 @@
     "content": [
       {
         "collapse": {
-          "content" : {
-          "content": [
+          "content":  [
             {
               "latex": "To prove $f$ is continous, by definition we need to show that for all elements $x$ of $X$ and neighborhooods $V$ of $f(x)$, there exists a neighborhood $U$ of $x$ such that $f[U] \\subseteq V$."
-            },
-            {
-              "collapse" : {"content": {
-                "latex" : "which can be seen by using your brain"
-              }}
             }
           ]
-        }
         }
       },
       {
@@ -24,7 +17,7 @@
       },
       {
         "collapse": {
-          "content" : {"content" : [
+          "content" : [
             {
               "latex": "We see the following argument"
             },
@@ -33,14 +26,14 @@
                 "latex": "Let $V'$ be a neighborhood of $f(x)$."
               }
             }
-          ]},
+          ]
+          ,
           "placeholder": {
-            "content" : {"content" : [
+            "content" : [
             {
                 "latex": "One can obtain"
             }
           ]
-        }
         }
         }
       },
