@@ -29,3 +29,7 @@ body {
   background-color: aqua;
   transition: background-color 0.25s;
 }
+
+.highlighted .Latex {
+  background-color: aqua;
+}

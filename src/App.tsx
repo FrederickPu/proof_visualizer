@@ -58,10 +58,10 @@ function App() {
     <div>
       <h3>Using proof objects</h3>
       <p>
-        {/* <InlineProof proof={test} /> */}
+        <InlineProof proof={test} />
       </p>
     </div>
-    {/* <Comp /> */}
+    <Comp />
     </div>
   )
 }

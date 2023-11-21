@@ -27,7 +27,7 @@ export interface InlineLatexProps {
 export function InlineLatex(props : InlineLatexProps){
   const {latex} = props;
   const parsed = parseTex(latex);
-  return <span>
+  return <span className='Latex'>
     {
     parsed.map((elem: ParsedLatex, index: number) => 
       'text' in elem ? (
