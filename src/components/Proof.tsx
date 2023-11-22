@@ -5,26 +5,28 @@ import './styles.modules.css'
 // import '../App.css'
 
 interface Proof {
-  content?: Proof[];
+  content?: (Proof | string)[];
 
   collapse?: {
-    content: Proof;
-    placeholder?: Proof;
+    content: Proof | string;
+    placeholder?: string;
   };
-  latex?: string;
-  indent?: Proof;
+  indent?: Proof | string;
   popup?: {
-    content: Proof;
-    ["popup-content"]: Proof;
+    content: Proof | string;
+    ["popup-content"]: Proof | string;
   };
 }
 
 interface InlineProofProps {
-  proof: Proof;
+  proof: Proof | string;
 }
 
 export const InlineProof: React.FC<InlineProofProps> = (props) => {
   const { proof } = props;
+
+  if (typeof proof === "string")
+    return <InlineLatex latex={proof}/>
 
   if ('content' in proof && Array.isArray(proof['content'])) {
     const contentArray = proof['content'];
@@ -47,19 +49,13 @@ export const InlineProof: React.FC<InlineProofProps> = (props) => {
     return (
       <Collapse
         content={<InlineProof proof={collapseContent} />}
-        placeholder={placeHolderContent  && <InlineProof proof={placeHolderContent} />}
+        // placeholder={placeHolderContent  && <InlineLatex latex={placeHolderContent} />}
       />
     );
   }
 
-  if ('latex' in proof && typeof proof['latex'] === 'string') {
-    return <InlineLatex latex={proof['latex']} />;
-  }
-  if (
-    'indent' in proof &&
-    proof['indent'] &&
-    typeof proof['indent'] === 'object'
-  ) {
+  if ('indent' in proof && proof['indent']) {
+    console.log("indnet")
     return (
       <div className="explanation_indent">
         <InlineProof proof={proof['indent']} />

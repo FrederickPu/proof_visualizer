@@ -19,29 +19,18 @@
           "content" : {"content" : [
             "We see the following argument",
             {
-              "indent": {
-                "content": "Let $V'$ be a neighborhood of $f(x)$."
-              }
+              "indent": "Let $V'$ be a neighborhood of $f(x)$."
             }
           ]},
           "placeholder": {
-            "content" : {"content" : [
-            {
-                "latex": "One can obtain"
-            }
-          ]
-        }
+            "content" : "One can obtain"
         }
         }
       },
       {
         "popup": {
-          "popup-content": {
-            "latex": "$V$ is a neighborhood around $f(x)$"
-          },
-          "content": {
-            "latex": "using the assumption"
-          }
+          "popup-content":  "$V$ is a neighborhood around $f(x)$",
+          "content": "using the assumption"
         }
       }
     ]
