@@ -17,7 +17,7 @@ import './App.css'
 import {InlineProof} from './components/Proof.tsx'
 import test from './assets/testproof2.json'
 
-import Comp from './tests/component_regression.tsx'
+// import Comp from './tests/component_regression.tsx'
 
 function App() {
   // const [count, setCount] = useState(0)

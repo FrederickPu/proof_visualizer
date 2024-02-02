@@ -10,7 +10,8 @@ A JSON API is exists which is used to feed into the proof-visualizer react compo
 ## building locally
 
 To run a test with all the components run the command `npm run dev`
-To build the npm package run `npm run publish`
+To build the npm package run `npm run build` and then `npm run publish`
+Note that if there are any major errors during build the build will fail and the `dist` folder (that gets shipped) will not be updated.
 
 ## credits
 
