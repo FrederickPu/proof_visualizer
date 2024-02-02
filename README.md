@@ -6,3 +6,12 @@ Details of proofs can be put into collaspable sections. This way the reader can 
 
 ## JSON api
 A JSON API is exists which is used to feed into the proof-visualizer react component and which can be used by servers to easily serve up proof visualizations simply by changing the `proof.json` file in the assets folder.
+
+## building locally
+
+To run a test with all the components run the command `npm run dev`
+To build the npm package run `npm run publish`
+
+## credits
+
+The setup for the react-component library is heavily based on the following [tutorial](https://www.youtube.com/watch?v=XKfeczZyEzc&t=317s). The ui is also inspired by Patrick Massot's [Lean Informal](https://www.youtube.com/watch?v=tp_h3vzkObo) (which is currently in beta).

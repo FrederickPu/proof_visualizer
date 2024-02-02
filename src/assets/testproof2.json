@@ -22,9 +22,7 @@
               "indent": "Let $V'$ be a neighborhood of $f(x)$."
             }
           ]},
-          "placeholder": {
-            "content" : "One can obtain"
-        }
+          "placeholder": "One can obtain"
         }
       },
       {

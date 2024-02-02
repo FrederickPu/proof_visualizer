@@ -9,7 +9,6 @@ export function Collapse(props : CollapseProps){
     const {content, placeholder} = props;
     const [hover, setHover] = React.useState(false)
     const [open, setOpen] = React.useState(false);
-    console.log(content)
 
     return <span className={hover ? 'highlighted' : 'sad'}>
         <span className="explanation_refinement_button button_unexpand"

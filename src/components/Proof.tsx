@@ -4,6 +4,12 @@ import Tippy from '@tippyjs/react';
 import './styles.modules.css'
 // import '../App.css'
 
+// Proof have 4 disjoint constructors:
+// - content
+// - placeholder
+// - indent
+// - poppup
+// Note that typescript cannot formally enforce this precondition.
 interface Proof {
   content?: (Proof | string)[];
 
@@ -49,13 +55,12 @@ export const InlineProof: React.FC<InlineProofProps> = (props) => {
     return (
       <Collapse
         content={<InlineProof proof={collapseContent} />}
-        // placeholder={placeHolderContent  && <InlineLatex latex={placeHolderContent} />}
+        placeholder={placeHolderContent  && <InlineLatex latex={placeHolderContent} />}
       />
     );
   }
 
   if ('indent' in proof && proof['indent']) {
-    console.log("indnet")
     return (
       <div className="explanation_indent">
         <InlineProof proof={proof['indent']} />
