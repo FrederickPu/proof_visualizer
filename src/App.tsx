@@ -15,7 +15,9 @@ import {Collapse} from './components/Collapse.tsx'
 import './App.css'
 
 import {InlineProof} from './components/Proof.tsx'
+import ToProof from './components/ToProof.ts'
 import test from './assets/testproof2.json'
+import testlml from './assets/testlml.js'
 
 // import Comp from './tests/component_regression.tsx'
 
@@ -58,6 +60,10 @@ function App() {
     <div>
       <h3>Using proof objects</h3>
       <InlineProof proof={test} />
+    </div>
+    <div>
+      <h3>Using InlineProof {"<|"} ToProof</h3>
+      <InlineProof proof={ToProof(testlml)} />
     </div>
     {/* <Comp /> TODO:: change regression testing code in accordance to new version of Proof and InlineProof*/}
     </div>
