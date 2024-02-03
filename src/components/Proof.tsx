@@ -10,7 +10,7 @@ import './styles.modules.css'
 // - indent
 // - poppup
 // Note that typescript cannot formally enforce this precondition.
-interface Proof {
+export interface Proof {
   content?: (Proof | string)[];
 
   collapse?: {
@@ -42,7 +42,7 @@ export const InlineProof: React.FC<InlineProofProps> = (props) => {
         {contentArray.map((x, index) => (
           <span key={index}>
             <InlineProof proof={x} />
-            {index < contentArray.length - 1 && ' '}
+            {index < contentArray.length - 1}
           </span>
         ))}
       </span>
