@@ -17,7 +17,7 @@ import './App.css'
 import {InlineProof} from './components/Proof.tsx'
 import ToProof from './components/ToProof.ts'
 import test from './assets/testproof2.json'
-import testlml from './assets/testlml.js'
+import testlml from './testlml.ts'
 
 // import Comp from './tests/component_regression.tsx'
 
